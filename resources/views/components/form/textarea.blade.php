@@ -1,1 +1,1 @@
-<textarea required>{{$slot}}</textarea>
+<textarea {{ $attributes }}>{{$slot}}</textarea>
