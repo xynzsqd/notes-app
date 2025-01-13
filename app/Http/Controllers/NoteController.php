@@ -38,9 +38,9 @@ class NoteController extends Controller
         return view('notes.show', compact('note'));
     }
 
-    public function edit(string $id)
+    public function edit(Request $request, Note $note)
     {
-        //
+        return view('notes.edit', compact('note'));
     }
 
     public function update(Request $request, string $id)
