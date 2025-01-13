@@ -1,4 +1,4 @@
-<div class="border py-5 px-4">
+<div class="border py-5 px-4 h-full">
     <div {{ $attributes }}>
         <h2 class="text-3xl font-medium mb-2">{{ $title }}</h2>
         <p class="text-2xl font-normal">{{ $content }}</p>

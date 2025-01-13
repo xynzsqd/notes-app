@@ -2,9 +2,9 @@
 
 @section('main')
     <div class="container mx-auto px-4">
-        <ul>
+        <ul class="md:grid lg:grid-cols-2 xl:grid-cols-3 gap-4">
             @foreach ($notes as $note)
-                <li>
+                <li class="">
                     <x-note.card :title="$note->title" :content="$note->content" class="mb-2">
                         <div>
                             <x-form.form method="POST" action="{{ route('notes.delete', $note->id) }}">
