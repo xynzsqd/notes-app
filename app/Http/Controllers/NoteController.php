@@ -9,7 +9,8 @@ class NoteController extends Controller
 {
     public function index()
     {
-        return view('notes.index');
+        $notes = Note::all();
+        return view('notes.index', compact('notes'));
     }
 
     public function create()
@@ -21,7 +22,7 @@ class NoteController extends Controller
     {
         $validated = $request->validate([
             'title' => ['required', 'string', 'max:50'],
-            'content' => [ 'string', 'max:1000'],
+            'content' => ['string', 'max:1000'],
         ]);
 
         Note::query()->create([
@@ -51,4 +52,4 @@ class NoteController extends Controller
     {
         //
     }
-    }
+}
