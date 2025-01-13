@@ -1,0 +1,1 @@
+<textarea required>{{$slot}}</textarea>
