@@ -20,15 +20,12 @@ class NoteController extends Controller
 
     public function store(Request $request)
     {
-        $validated = $request->validate([
+        $validatedData = $request->validate([
             'title' => ['required', 'string', 'max:50'],
             'content' => ['string', 'max:1000'],
         ]);
 
-        Note::query()->create([
-            'title' => $validated['title'],
-            'content' => $validated['content'],
-        ]);
+        Note::query()->create($validatedData);
 
         return redirect()->route('notes.index');
     }
@@ -43,9 +40,16 @@ class NoteController extends Controller
         return view('notes.edit', compact('note'));
     }
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, Note $note)
     {
-        //
+        $validatedData = $request->validate([
+            'title' => ['required', 'string', 'max:50'],
+            'content' => ['string', 'max:1000'],
+        ]);
+
+        $note->update($validatedData);
+
+        return redirect()->route('notes.show', $note->id);
     }
 
     public function delete(string $id)
