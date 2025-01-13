@@ -1,0 +1,14 @@
+Gtk-Message: 09:10:02.126: Failed to load module "xapp-gtk3-module"
+Gtk-Message: 09:10:02.126: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[20153, Main Thread] WARNING: GTK+ module /snap/firefox/5561/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:201
+
+(firefox:20153): Gtk-WARNING **: 09:10:02.200: GTK+ module /snap/firefox/5561/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 09:10:02.200: Failed to load module "canberra-gtk-module"
+[20153, Main Thread] WARNING: GTK+ module /snap/firefox/5561/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:201
+
+(firefox:20153): Gtk-WARNING **: 09:10:02.201: GTK+ module /snap/firefox/5561/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 09:10:02.201: Failed to load module "canberra-gtk-module"
