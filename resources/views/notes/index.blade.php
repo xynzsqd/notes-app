@@ -4,7 +4,12 @@
     <ul>
         @foreach ($notes as $note)
             <li>
-                <x-note.card :title="$note->title" :content="$note->content"></x-note.card>
+                <div>
+                    <x-note.card :title="$note->title" :content="$note->content"></x-note.card>
+                    <div>
+                        <p>sdf</p>
+                    </div>
+                </div>
             </li>
         @endforeach
     </ul>

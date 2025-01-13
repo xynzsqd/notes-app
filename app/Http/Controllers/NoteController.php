@@ -33,9 +33,9 @@ class NoteController extends Controller
         return redirect()->route('notes.index');
     }
 
-    public function show(string $id)
+    public function show(Request $request, Note $note)
     {
-        //
+        return view('notes.show', compact('note'));
     }
 
     public function edit(string $id)
