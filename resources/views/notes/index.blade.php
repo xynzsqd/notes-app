@@ -5,10 +5,7 @@
         @foreach ($notes as $note)
             <li>
                 <div>
-                    <x-note.card :title="$note->title" :content="$note->content"></x-note.card>
-                    <div>
-                        <p>sdf</p>
-                    </div>
+                    <x-note.card :title="$note->title" :content="$note->content"/>
                 </div>
             </li>
         @endforeach
