@@ -52,8 +52,10 @@ class NoteController extends Controller
         return redirect()->route('notes.show', $note->id);
     }
 
-    public function delete(string $id)
+    public function delete(Request $request, Note $note)
     {
-        //
+        $note->delete();
+
+        return redirect()->route('notes.index');
     }
 }
