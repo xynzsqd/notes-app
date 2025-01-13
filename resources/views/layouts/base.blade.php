@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-full" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,14 @@
     <title>@yield('page.title', config('app.name'))</title>
 </head>
 
-<body>
-    @include('includes.header')
-    <main>
-        @yield('main')
-    </main>
-    @include('includes.footer')
+<body class="h-full">
+    <div class="wrapper min-h-full flex flex-col">
+        @include('includes.header')
+        <main class="flex flex-auto">
+            @yield('main')
+        </main>
+        @include('includes.footer')
+    </div>
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
