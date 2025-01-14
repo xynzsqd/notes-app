@@ -1,4 +1,4 @@
-<form {{ $attributes }} >
+<form {{ $attributes->class(['']) }} >
     @csrf
     {{ $slot }}
 </form>

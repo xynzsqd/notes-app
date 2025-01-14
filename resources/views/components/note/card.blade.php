@@ -4,7 +4,7 @@
     <div {{ $attributes }}>
         @if ($href)
             <a href="{{ $href }}">
-                <h2 class="text-3xl font-medium mb-2">{{ $title }}</h2>
+                <h2 class="text-3xl font-medium mb-2 break-words">{{ $title }}</h2>
                 <p class="text-2xl font-normal">{{ $content }}</p>
             </a>
         @else
