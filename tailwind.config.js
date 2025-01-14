@@ -12,7 +12,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                // temporary commented for tailwind intellisense
+                // sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
         },
     },
