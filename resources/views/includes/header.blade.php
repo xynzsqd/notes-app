@@ -4,7 +4,8 @@
             <a href="{{ route('notes.index') }}" class="flex">
                 <h1>MyNotes</h1>
             </a>
-            <a href="{{route('notes.create')}}" class="flex bg-indigo-600 text-white px-3 py-2 rounded-md">
+            <a href="{{ route('notes.create') }}"
+                class="flex bg-indigo-600 hover:bg-indigo-800 transition-colors duration-200 text-white px-3 py-2 rounded-md">
                 Create note
             </a>
         </nav>
