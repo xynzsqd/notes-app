@@ -1,6 +1,6 @@
 @props(['href' => null])
 
-<div class="flex flex-col justify-between min-h-52 border rounded-md shadow-lg py-5 px-4 h-full">
+<div class="w-full flex flex-col justify-between min-h-52 border rounded-md shadow-lg py-5 px-4">
     <div {{ $attributes }}>
         @if ($href)
             <a href="{{ $href }}">

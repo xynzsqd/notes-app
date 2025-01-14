@@ -4,7 +4,7 @@
     <div class="container flex justify-center items-center mx-auto px-4 min-h-full">
         <ul class="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 w-full">
             @foreach ($notes as $note)
-                <li>
+                <li class="">
                     <x-note.card :title="$note->title" :content="Str::limit($note->content, 20)" :href="route('notes.show', $note->id)">
                         <div class="self-end">
                             <x-form.form class="flex gap-x-3" method="POST" action="{{ route('notes.delete', $note->id) }}">
